@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="side-header">
+        <div class="header-logo">
+          <img src="assets/img2.png" alt="" />
+          ODIN
+        </div>
+        <p class="cite">
+          Photo By
+          <a href="">Halie West</a>
+          on
+          <a href="">Unsplash</a>
+        </p>
+      </div>
+      <section class="right-form">
+        <div class="form-header">
+          <p>
+            This is not a real online service, A test ipsum dolor sit amet
+            consectetur adipisicing elit. Quod, id fuga voluptates rerum porro
+            at! Voluptatem sit autem nisi, error dolores et illo doloribus, odio
+            quae iste, atque sunt eius.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <form method="post" class="form">
+          <div class="inputs__container">
+            <legend>Let's do this!</legend>
+            <div class="inputs">
+              <div class="input">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" />
+              </div>
+              <div class="input">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="firstName" />
+              </div>
+              <div class="input">
+                <label for="email">Email</label>
+                <input type="text" id="firstName" />
+              </div>
+              <div class="input">
+                <label for="phone#">Phone Number</label>
+                <input type="number" id="firstName" />
+              </div>
+              <div class="input">
+                <label for="pass">Password</label>
+                <input required type="password" id="firstName"  />
+              </div>
+              <div class="input">
+                <label for="confirmPass">Confirm Password</label>
+                <input required type="password" id="firstName"  />
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="bottom">
+          <button class="btn">Create Account</button>
+          <p>Already Have an account? <a href="#">Log in</a></p>
+        </div>
+      </section>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
