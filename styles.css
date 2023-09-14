@@ -61,8 +61,11 @@ a {
   font-size: 25px;
   margin-left: var(--left-space);
   max-width: 80%;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin-bottom: 28px;
+}
+.form-header > p {
+  font-weight: 500;
 }
 .inputs {
   margin-left: var(--left-space);
@@ -73,29 +76,32 @@ a {
 .form {
   background-color: rgb(255, 255, 255);
   padding: 16px;
+  box-shadow: 2px 1px #888888;
 }
-legend {
-  padding-bottom: 33px;
-  font-family: "Gill Sans", "Trebuchet MS", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
+.inputs-header {
+  font-weight: 100;
 }
 .input {
   margin-right: 3rem;
   margin-bottom: 1rem;
-  padding:8px;
+  padding: 8px;
+}
+input:invalid {
+  border-color: 1px solid red;
+}
+input:valid {
+  border-color: 1px solid rgb(43, 255, 0);
 }
 .inputs__container {
   margin-left: var(--left-space);
   max-width: 33vw;
-  margin-bottom:9px;
+  margin-bottom: 9px;
 }
 .bottom {
-  margin-top: 5em;
-  padding-left: var(--left-space);
+  padding-left: 30px;
 }
 .btn {
-  cursor: pointer;
+  cursor: not-allowed;
   font-family: "Gill Sans", "Trebuchet MS", sans-serif;
   color: white;
   background-color: rgba(55, 145, 76, 0.858);
@@ -103,12 +109,36 @@ legend {
   border-radius: 10px;
   font-size: 20px;
   padding: 0.5em 2.2em;
+  margin-top: 25px;
+  margin-left: 25px;
 }
-input{
+.btn:hover {
+  transition: all 100ms;
+  transform: scale(1.03);
+}
+input:focus {
+  border: 2px solid rgb(0, 136, 255);
+  outline: none;
+}
+input {
   padding: 6px 3px;
-    border: 1px solid #e5e7eb;
-    border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(240, 240, 240);
 }
-label{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+label {
+  color: rgb(85, 85, 85);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#error {
+  color: red;
+  font-size: 12px;
+}
+.link a {
+  color: rgba(55, 145, 76, 0.858);
+  font-weight: 600;
+  cursor: not-allowed;
+}
+.link {
+  margin-left: 25px;
 }

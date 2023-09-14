@@ -15,9 +15,9 @@
         </div>
         <p class="cite">
           Photo By
-          <a href="">Halie West</a>
+          <a href="https://unsplash.com/@haliewestphoto"target="_blank">Halie West</a>
           on
-          <a href="">Unsplash</a>
+          <a href="https://unsplash.com/photos/25xggax4bSA"target="_blank">Unsplash</a>
         </p>
       </div>
       <section class="right-form">
@@ -32,19 +32,19 @@
         </div>
         <form method="post" class="form">
           <div class="inputs__container">
-            <legend>Let's do this!</legend>
+            <h1 class="input-header">Lets do this!</h1>
             <div class="inputs">
               <div class="input">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" />
+                <input required type="text" id="firstName" />
               </div>
               <div class="input">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="firstName" />
+                <input required type="text" id="firstName" />
               </div>
               <div class="input">
                 <label for="email">Email</label>
-                <input type="text" id="firstName" />
+                <input required type="email" id="firstName" />
               </div>
               <div class="input">
                 <label for="phone#">Phone Number</label>
@@ -52,18 +52,19 @@
               </div>
               <div class="input">
                 <label for="pass">Password</label>
-                <input required type="password" id="firstName"  />
+                <input required type="password" id="password"  />
+                <p id="error"></p>
               </div>
               <div class="input">
                 <label for="confirmPass">Confirm Password</label>
-                <input required type="password" id="firstName"  />
+                <input required type="password" id="confirmPassword"  />
               </div>
             </div>
           </div>
         </form>
         <div class="bottom">
-          <button class="btn">Create Account</button>
-          <p>Already Have an account? <a href="#">Log in</a></p>
+          <button type="submit" class="btn">Create Account</button>
+          <p class="link">Already Have an account? <a href="#">Log in</a></p>
         </div>
       </section>
     </div>
